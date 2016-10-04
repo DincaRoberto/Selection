@@ -1,0 +1,27 @@
+<md-card id="restaurants-container">
+    <md-card-content>
+        <div id="restaurants-list">
+            <div class="restaurant" *ngFor="let r of restaurants; let i=index">
+
+                <div class="static-content">
+                    <div class="content">
+                        <h3 md-line> {{r.name}} </h3>
+                        <p md-line>
+                            <span> {{r.hours}} </span>
+                            <span class="demo-2"> -- {{r.description}} </span>
+                        </p>
+                    </div>
+                    <div class="actions">
+                        <div>
+                            <button md-icon-button color="primary" (click)="showRecipes[i]=!showRecipes[i]">
+                                <md-icon class="md-24">menu</md-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div [class.show-recipes]="showRecipes[i]" class="active-content">{{ i }}</div>
+            </div>
+        </div>
+    </md-card-content>
+</md-card>

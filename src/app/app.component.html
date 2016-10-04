@@ -1,0 +1,17 @@
+<md-toolbar color="primary">
+
+    <span>{{ title }}</span>
+
+    <span style="flex: 1 1 auto"> </span>
+
+    <button md-icon-button routerLink="/recipes" routerLinkActive="active">
+        <md-icon class="md-24">restaurant</md-icon>
+    </button>
+
+    <button md-icon-button routerLink="/restaurants" routerLinkActive="active">
+        <md-icon class="md-24">restaurant_menu</md-icon>
+    </button>
+</md-toolbar>
+
+
+<router-outlet></router-outlet>

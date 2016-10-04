@@ -1,0 +1,50 @@
+
+#restaurants-container {
+
+  margin: 10px auto;
+}
+
+#restaurants-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant {
+  border-top: solid #BBB 1px;
+  display: flex;
+  width: 500px;
+  max-width: 500px;
+  flex-direction: column;
+}
+
+.static-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.active-content{
+  transition: all 2s cubic-bezier(.49,.01,.23,1);
+  height: 0px;
+  overflow: hidden;
+
+}
+.show-recipes {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+
+
+  background-color: #DDD;
+}
